@@ -1,5 +1,5 @@
 
-public class HelloJava {
+public class Ex01HelloJava {
 
 	public static void main(String[] args) {
 		
