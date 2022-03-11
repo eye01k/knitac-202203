@@ -1,5 +1,5 @@
 
-public class Lab1Lotto { // 모든 자바 코드는 클래스 안에 작성
+public class Lab2Lotto { // 모든 자바 코드는 클래스 안에 작성
 
 	public static void main(String[] args) { // 프로그램 시작점
 
@@ -16,10 +16,23 @@ public class Lab1Lotto { // 모든 자바 코드는 클래스 안에 작성
 
 			if (selection.equals("1")) {
 				
+				// int[] numbers; // 배열 참조변수 만들기
+				// numbers = new int[6]; // 정수 6개를 저장할 수 있는 배열 인스턴스 만들고 주소를 저장
+				int[] numbers = new int[6];
+				for (int i = 0; i < numbers.length; i++) {
+					numbers[i] = (int)(Math.random() * 45) + 1;
+					for (int j = 0; j < i; j++) { // 중복 검사를 위한 반복문
+						if (numbers[i] == numbers[j]) { // 중복된 데이터 발견된다면
+							//i = -1;
+							i--; // i -= 1, --i, i = i - 1
+							break;
+						}
+					}
+				}
+				
 				System.out.print("당첨 예상 번호 : ");
-				for(int i = 0; i < 6; i++) { // i++ : i = i + 1
-					int number = (int)(Math.random() * 45) + 1; // 1 ~ 45(45포함)
-					System.out.print("[" + number + "]");
+				for(int i = 0; i < numbers.length; i++) { // i++ : i = i + 1
+					System.out.print("[" + numbers[i] + "]");
 				}
 				System.out.println();
 				

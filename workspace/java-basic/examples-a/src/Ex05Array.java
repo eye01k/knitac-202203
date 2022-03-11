@@ -52,6 +52,17 @@ public class Ex05Array {
 		
 		System.out.println("==================================");
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		//5. 요소의 크기가 다른 2차원 배열
 		int[][] ar5 = new int[5][];
 		for (int i = 0; i < ar5.length; i++) {
