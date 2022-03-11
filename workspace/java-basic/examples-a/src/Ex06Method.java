@@ -23,11 +23,11 @@ public class Ex06Method {
 
 	}
 
-	// 함수 정의 : 코드를 재사용 가능한 관리 단위로 구성
+	// 메서드 정의 : 코드를 재사용 가능한 관리 단위로 구성
 	private static void drawBox() {
 		for (int y = 0; y < 10; y++) {
-			for (int x = 0; x < 20; x++) {
-				if (x == 0 || x == 20 - 1 || 
+			for (int x = 0; x < 30; x++) {
+				if (x == 0 || x == 30 - 1 || 
 					y == 0 || y == 10 - 1) {
 					System.out.print("*");
 				} else {

@@ -90,10 +90,23 @@ public class Ex05Array {
 			System.out.println();
 		}
 		
+		//////////////////////////////
+		// 열거형 테스트
+		System.out.println("======================================");
+		
+		Color color;
+		color = Color.Green;
+		// color = 10; // Color.Green, Color.Red, Color.Blue 만 저장할 수 있습니다.
+		System.out.println(color);
 
 	}
 
 }
+enum Color {
+	Red,
+	Green,
+	Blue
+};
 
 
 

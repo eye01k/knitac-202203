@@ -18,6 +18,7 @@ public class Ex06Method2 {
 		
 		scanner.close();
 	}
+	
 	//메서드 정의 - 메서드 만들기
 	static void drawBox(String s, int width, int height) {
 		for (int y = 0; y < height; y++) {
