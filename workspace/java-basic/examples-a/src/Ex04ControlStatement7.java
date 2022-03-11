@@ -11,10 +11,10 @@ public class Ex04ControlStatement7 {
 		//while (x < 5) {
 		while (x < n) {
 			System.out.printf("%d번째 데이터\n", (x + 1));
-			x += 1; //  x = x + 1;
+			x += 1; //  x = x + 1; --> x++ --> ++x
 		}
 		
-		System.out.println("***************************");
+		System.out.println("1***************************");
 		/////////////////////////////////////////////////////
 		
 		x = 0;
@@ -23,11 +23,11 @@ public class Ex04ControlStatement7 {
 			x += 1;
 			
 			if (x >= n) {
-				break; //반복문을 종료하는 명령
+				break; //반복문 안에서 break : 반복문을 종료하는 명령
 			}
 		}
 		
-		System.out.println("***************************");
+		System.out.println("2***************************");
 		/////////////////////////////////////////////
 		
 		x = 0;		
@@ -42,7 +42,7 @@ public class Ex04ControlStatement7 {
 			
 		}
 		
-		System.out.println("***************************");
+		System.out.println("3***************************");
 		///////////////////////////////////////////////////
 		x = 0;		
 		do {
@@ -50,18 +50,18 @@ public class Ex04ControlStatement7 {
 			x += 1; //  x = x + 1;
 		} while (x < n);
 		
-		System.out.println("***************************");
+		System.out.println("4***************************");
 		///////////////////////////////////////////////////
 		
-		for(x = 0; x < n; x++) {
+		for(x = 0; x < n; x++) { // x = x + 1 -> x += 1 -> ++x
 			System.out.println(x+1);
 		}
 		
-		System.out.println("***************************");
+		System.out.println("5***************************");
 		///////////////////////////////////////////////////
 		
 		//for(int idx = 0; idx < 10; idx = idx + 1) {
-		for(int idx = 0; idx < 10; idx += 2) { // idx += 2 = idx = idx + 2
+		for(int idx = 0; idx < 10; idx += 2) { // idx += 2 --> idx = idx + 2
 			System.out.println(idx);
 		}
 		

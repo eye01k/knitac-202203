@@ -10,7 +10,7 @@ public class Ex04ControlStatement {
 		int number = (int)(r * 900) + 100; // 100 ~ 1000 범위의 정수
 		System.out.println( number );
 		
-		if (number > 800) { // number가 800보다 크다면
+		if (number > 800) { // number가 800보다 크다면 true
 			System.out.println("number는 800보다 큽니다.");
 		}
 		

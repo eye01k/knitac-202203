@@ -11,7 +11,7 @@ public class Ex04ControlStatement2 {
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 		
 		System.out.print("숫자: ");
-		int operand1 = scanner.nextInt();
+		int operand1 = scanner.nextInt(); // 숫자 입력
 		System.out.print("연산자: ");
 		String op = scanner.next(); // 문자열 입력
 		System.out.print("숫자: ");

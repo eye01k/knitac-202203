@@ -4,8 +4,8 @@ public class Ex02VariableAndDataType {
 	public static void main(String[] args) {
 		
 		//1. 변수 선언
-		int i; //4byte 정수형 변수 만들기
-		double d; //8byte 실수형 변수 만들기
+		int i; 		//4byte 정수형 변수 만들기
+		double d; 	//8byte 실수형 변수 만들기
 		
 		//2. 변수 사용
 		i = 10;		//i로 이름붙인 메모리 공간에 데이터 저장
@@ -15,9 +15,12 @@ public class Ex02VariableAndDataType {
 		System.out.println(i2); //데이터 읽기
 		System.out.println(d); //데이터 읽기
 		
-		//정수형 변수 x를 만들고 100을 저장한 후 
-		//x변수에 저장된 값에 50을 곱해서 x2에 저장하고
-		//결과를 출력하세요
+//		//정수형 변수 x를 만들고 100을 저장한 후 
+//		int x = 100;
+//		//x변수에 저장된 값에 50을 곱해서 x2에 저장하고
+//		int x2 = x * 50;
+//		//결과를 출력하세요
+//		System.out.println(x2);
 		
 		//2-1. 변수 사용 범위
 		int xs = 10;
@@ -42,7 +45,7 @@ public class Ex02VariableAndDataType {
 		//   ( 문자 : 'A', 문자열 : "ABC" )
 		char c = 'A'; //문자
 		System.out.println(c); // A 출력
-		System.out.println( (int)c ); // 65 출력, (자료형)변수 -> 변수를 지정된 자료형을 사용 
+		System.out.println( (int)c ); // 65 출력, (자료형)변수 -> 변수를 지정된 자료형으로 사용 
 		
 		String s = "ABC"; //문자열
 		System.out.println(s);
@@ -51,10 +54,11 @@ public class Ex02VariableAndDataType {
 		
 		//5. 기본값(초기값)
 		
-		int x;
+		int x; // 어떤 값이 들어있을까요?
 		// System.out.println(x); //오류 - 값을 저장하지 않은 변수 사용 X
 		x = 10;
 		System.out.println(x);
+		int x4 = 20;
 		
 		//6. overflow, underflow
 		int max = 2147483647;//int 자료형으로 표현할 수 있는 최대값

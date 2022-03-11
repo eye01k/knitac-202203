@@ -8,6 +8,8 @@ public class Ex04ControlStatement3 {
 		//- 연산자에 따라 연산
 		//- 출력
 		
+		System.out.println(10 / 3);
+		
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 		
 		System.out.print("숫자: ");
@@ -32,13 +34,13 @@ public class Ex04ControlStatement3 {
 			System.out.println(operand1 * operand2);
 			break;
 		case "/":
-			System.out.println(operand1 / operand2);
-			System.out.println( (double)operand1 / operand2);
+			System.out.println( (double)operand1 / operand2 ); // 결과 실수
+			System.out.println( operand1 / operand2 );	// 결과 정수
 			break;
 		case "%":
 			System.out.println(operand1 % operand2);
 			break;
-		default: // 위 조건에 해당하지 않는 모든 경우
+		default: // 위 조건에 해당하지 않는 모든 경우 ( if 문과 비교하면 else 에 해당하는 구문 )
 			System.out.println("지원하지 않는 연산자입니다.");
 			break;
 		}
